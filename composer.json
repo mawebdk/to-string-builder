@@ -1,0 +1,21 @@
+{
+  "name": "mawebdk/to-string-builder",
+  "description": "Builder class for __toString() methods.",
+  "license": "BSD-2-Clause",
+  "require": {
+    "php": "^8.3.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^12.0.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "MawebDK\\ToStringBuilder\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MawebDK\\ToStringBuilder\\Test\\": "test/"
+    }
+  }
+}
