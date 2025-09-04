@@ -153,8 +153,10 @@ class ToStringBuilder
     {
         if ($object instanceof Stringable):
             return (string)$object;
+        elseif ($object instanceof UnitEnum):
+            return sprintf('%s::%s', $object::class, $object->name);
         else:
-            return sprintf('%s{?}', get_class($object));
+            return sprintf('%s{?}', $object::class);
         endif;
     }
 }
