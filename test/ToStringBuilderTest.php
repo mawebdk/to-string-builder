@@ -117,11 +117,11 @@ class ToStringBuilderTest extends TestCase
             ],
             'Basic enumeration' => [
                 'value'                  => Test_BasicEnum::ONE,
-                'expectedFormattedValue' => 'MawebDK\ToStringBuilder\Test\Test_BasicEnum{?}',
+                'expectedFormattedValue' => 'MawebDK\ToStringBuilder\Test\Test_BasicEnum::ONE',
             ],
             'Backed enumeration' => [
                 'value'                  => Test_BackedEnum::ONE,
-                'expectedFormattedValue' => 'MawebDK\ToStringBuilder\Test\Test_BackedEnum{?}',
+                'expectedFormattedValue' => 'MawebDK\ToStringBuilder\Test\Test_BackedEnum::ONE',
             ],
             'Anonymous function' => [
                 'value'                  => function(): string { return ''; },
@@ -238,7 +238,7 @@ class ToStringBuilderTest extends TestCase
                     'basicEnumeration'  => Test_BasicEnum::ONE,
                     'backedEnumeration' => Test_BackedEnum::ONE,
                 ],
-                'expectedToStringOutput' => 'DateTime{"basicEnumeration": MawebDK\ToStringBuilder\Test\Test_BasicEnum{?}, "backedEnumeration": MawebDK\ToStringBuilder\Test\Test_BackedEnum{?}}'
+                'expectedToStringOutput' => 'DateTime{"basicEnumeration": MawebDK\ToStringBuilder\Test\Test_BasicEnum::ONE, "backedEnumeration": MawebDK\ToStringBuilder\Test\Test_BackedEnum::ONE}'
             ],
             'Object (function) values' => [
                 'object'                 => new DateTime(),
