@@ -2,6 +2,7 @@
 namespace MawebDK\ToStringBuilder;
 
 use Stringable;
+use UnitEnum;
 
 /**
  * Builder class for __toString() methods.
